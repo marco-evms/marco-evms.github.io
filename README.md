@@ -1,2 +1,2 @@
 tell marco if you have any new proxys to link.
-snitch=getting jumped
+snitch=you will get jumped
