@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>mUnblock</title>
+    <title>EVMS Unblock</title>
   <style> 
       h1{ text-align: center;;
           font-size: 55px;;
@@ -16,6 +16,30 @@
       label{
       color: blue;;
           background-color: white;;
+          text-align: center;;
+      }
+    .linkbutton{
+          width: 90px;;
+          height:30px;;
+          text-align: center;;
+          font-color:red;;
+          font-size:12px;
+          background-color: grey;;
+      }
+      .credits{
+          text-align: right;;
+          font-style: italic;;
+          font-color: yellow;;
+      }
+      button{
+         background-color:white;; 
+          border-color: black;;
+      }
+      button:hover{
+          background-color: red;;
+          font-color: white;;
+          
+          
       }
  
       
@@ -23,20 +47,64 @@
     </head>
     <body>
         
-      <h1>Welcome to mUnblock.</h1>  
-          <h4>Enter Url</h4>  
-      <form>
-            <label type="websiteurl">URL</label>
-          <input for="text" id="websiteurl">
-          <button onclick="url" width="50" height = "20">Submit</button>
-          
-        </form>
-        <iframe id="url" src="url" width = "800" height="450" ></iframe>
+      <h1>EVMS Unblock</h1>  
+           <input type="text" id="urlInput" placeholder="Enter Url">
+        <button class="linkbutton" onclick="redirect()">---></button>
+        <p class="credits">by Marco Alejandre Solis</p>
+
+
+
+<br><br>
+
+
+
+        <h1>Proxys</h1>
+         <button onclick="location.href = 'https://r1.shieldbothost.xyz'; " width="80" height = "20">RammerHead</button>
+        <button onclick="location.href = 'https://hide.me'; "  >Hide.Me</button>
+        <button onclick="location.href='https://steganos.com';">Steganos</button>
+        <h1>Apps</h1>
+         <button onclick="location.href = 'https://google.com'; ">Google Search</button>
+        <button onclick="location.href = 'https://tiktok.com'; ">TikTok</button>
+        <button onclick="location.href ='https://youtube.com';">YouTube</button>
+        <button onclick="location.href ='https://bing.com';">Bing</button>
+        <button onclick="location.href ='https://facebook.com';">Facebook</button>
+                <button onclick="location.href ='https://x.com';">Twitter/X</button>
+
+        <h1>Help</h1>
+        <button onclick ="location.href ='https://forms.gle/EY5FRVoZYkGb65Kh7';">suggest apps or proxies to add</button>
+        
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+        
+        
+            
+
     </body>
     
 </html>
-<script>
 
-document.getElementById("url").innerHTML = "https://bing.com";
+
+  <script>
+    function redirect() {
+      var url = document.getElementById("urlInput").value;
+      if (url) {
+        window.open.href = url;
+      }
+        else{
+            window.open.href = "https://google.com/search?q=hi"
+        }
+    }
     
 </script>
