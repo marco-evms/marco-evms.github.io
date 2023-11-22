@@ -38,6 +38,7 @@
       button:hover{
           background-color: red;;
           font-color: white;;
+          font-style: italic;;
           
           
       }
@@ -49,7 +50,7 @@
         
       <h1>EVMS Unblock</h1>  
            <input type="text" id="urlInput" placeholder="Enter Url">
-        <button class="linkbutton" onclick="redirect()">---></button>
+        <button class="linkbutton" onclick="redirect()">Go</button>
         <p class="credits">by Marco Alejandre Solis</p>
 
 
@@ -97,14 +98,11 @@
 
 
   <script>
-    function redirect() {
+     function redirect() {
       var url = document.getElementById("urlInput").value;
       if (url) {
-        window.open.href = url;
+        window.location.href = url;
       }
-        else{
-            window.open.href = "https://google.com/search?q=hi"
-        }
     }
     
 </script>
